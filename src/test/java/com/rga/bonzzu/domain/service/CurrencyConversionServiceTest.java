@@ -15,10 +15,10 @@ import org.junit.Test;
 
 public class CurrencyConversionServiceTest {
 
-  // For testing reasons the time is reduced from minutes to seconds
   private static final String BASE_DIR = "/currencyDataSource/";
   private static final CurrencyConversionService SERVICE;
 
+  // For testing reasons the time is reduced from minutes to seconds
   static {
     SERVICE = new CurrencyConversionService(5000, BASE_DIR, 1000);
   }

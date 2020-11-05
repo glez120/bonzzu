@@ -38,7 +38,6 @@ public class CurrencyConversionService {
 
   public CurrencyConversionService(
       long currencyReloadTime, String currencyFilesBasePath, long currencyMapRefreshTime) {
-    System.out.println("==> CurrencyConversionService <==");
     try {
       CurrencyConversionBuilder builder = new CurrencyConversionBuilder(currencyFilesBasePath);
       new Timer().scheduleAtFixedRate(builder, 0, currencyReloadTime);
